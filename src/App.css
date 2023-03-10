@@ -1,0 +1,124 @@
+.App {
+  text-align: center;
+  min-height: 100%;
+  display: flex;
+  background-color: black;
+  padding: 1rem 5rem;
+}
+
+.container {
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+}
+
+.container div.new-char:last-child {
+  margin-top: auto;
+}
+
+.attributes-container {
+  text-decoration: unset;
+  text-align: left;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  max-width: 35%;
+  margin-bottom: 1em;
+}
+.stats-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.stats-container > div {
+  flex: 1;
+}
+
+@media (max-width: 750px) {
+  .App {
+    padding: 8px;
+    background-color: white;
+  }
+  .container {
+    padding: 8px;
+    border-radius: 0;
+  }
+  .logo {
+    max-width: 50%;
+  }
+  .stats-container {
+    flex-direction: column;
+  }
+
+  .generator-link {
+    position: relative;
+    padding-bottom: 8px;
+  }
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@keyframes showStats {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section-title {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+.stats-container > div {
+  animation: 1s ease-out 0s 1 showStats;
+  padding: 1rem;
+  text-align: left;
+}
+
+body {
+  font-family: "Garamond";
+  height: 100vh;
+  font-size: 24px;
+}
+
+.generator-link {
+  position: relative;
+  font-weight: bold;
+  font-size: 48px;
+  opacity: 1;
+  transition: all ease-out 1s;
+}
+
+.generator-link:active {
+  font-size: 48px;
+  opacity: 0.25;
+  transition: 0.1s ease-out;
+}
+
+#root {
+  height: 100%;
+}
+
+.generator-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

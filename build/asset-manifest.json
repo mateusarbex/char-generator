@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03909420.css",
+    "main.js": "/static/js/main.5618c2b1.js",
+    "static/js/787.112d217b.chunk.js": "/static/js/787.112d217b.chunk.js",
+    "static/media/Garamond.ttf": "/static/media/Garamond.baa0e0cf79395becf7d7.ttf",
+    "static/media/GaramondItalic.ttf": "/static/media/GaramondItalic.2d561b81d4fd1bf7188a.ttf",
+    "service-worker.js": "/service-worker.js",
+    "static/media/DraconisBoldItalic.ttf": "/static/media/DraconisBoldItalic.7e000f6a50ccb2bd6ba8.ttf",
+    "static/media/DraconisItalic.ttf": "/static/media/DraconisItalic.2968d55313c526274bb5.ttf",
+    "static/media/logo.png": "/static/media/logo.bc593f786f4d7321f96a.png",
+    "static/media/DraconisBold.ttf": "/static/media/DraconisBold.f4d8b9c53b024fa0b29c.ttf",
+    "static/media/Draconis.ttf": "/static/media/Draconis.a680907cf7417672cfa0.ttf",
+    "index.html": "/index.html",
+    "main.03909420.css.map": "/static/css/main.03909420.css.map",
+    "main.5618c2b1.js.map": "/static/js/main.5618c2b1.js.map",
+    "787.112d217b.chunk.js.map": "/static/js/787.112d217b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03909420.css",
+    "static/js/main.5618c2b1.js"
+  ]
+}

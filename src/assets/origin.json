@@ -1,0 +1,50 @@
+[
+  {
+    "nameM": "Humano",
+    "nameF": "Humana",
+    "name": "Humanos",
+    "mod": { "case": { "value": 10, "mod": 4 }, "value": 3 },
+    "description": [
+      "Diversos: Humanos podem subtrair -2 de um Atributo e adicionar +2 em um outro Atributo a sua escolha. Além disso, podem jogar duas vezes um atributo e ficar com o melhor valor.",
+      "Mateiro: Humanos começam com 2 Talentos de Vocação",
+      "Rápida Evolução: recebem 6 pontos de Evolução ao Evoluírem. "
+    ]
+  },
+  {
+    "nameM": "Anão",
+    "nameF": "Anã",
+    "name": "Anões",
+    "mod": { "case": null, "value": 4 },
+    "description": [
+      "Povo do subterrâneo: 1-2 em 6 buscar algo.",
+      "Visão no escuro: Conseguem enxergar em ambientes com pouca ou nenhuma luminosidade",
+      "Costas de ferro: 1D de itens na taxa de Carga",
+      "Cheirador de tesouro: Dizer se há ou não tesouros"
+    ]
+  },
+  {
+    "nameM": "Elfo",
+    "nameF": "Elfa",
+    "name": "Elfos",
+    "mod": { "case": null, "value": 2 },
+    "description": [
+      "Insone: Elfos são imunes a sono. Meditam por 4 horas para descansar.",
+      "Visão no escuro: Conseguem enxergar em ambientes com pouca ou nenhuma luminosidade",
+      "Evolução Lenta: eles recebem só 4 pontos de evolução ao progredirem",
+      "Sangue Mágico: Possuem 1 Pontos de Mana de 1 Tradição de Mágica.",
+      "Percepção Élfica: Notar portas secretas e ocultas. 1-2 em 6 para saber se existe."
+    ]
+  },
+  {
+    "nameM": "Pequenino",
+    "nameF": "Pequenina",
+    "name": "Pequeninos",
+    "mod": { "case": { "value": 11, "mod": 3 }, "value": 2 },
+    "description": [
+      "Povo Pequeno: Pequeninos ganham +1 na Defesa contra criaturas de categoria grande. Todavia, eles não podem usar arcos longos ou armas corpo a corpo de duas mãos.",
+      "Boa Mira: Pequeninos recebem +1 em Ataques ao utilizar armas de arremesso.",
+      "Pés Furtivos:. Quando estiver tentando se esconder, 1-2 em 6 para conseguir.",
+      "Apegado a Vida: Quando um Pequenino perde toda a sua Vitalidade, o Mestre rola 1D, se o resultado for 1, ele está vivo com 1 de Vitalidade."
+    ]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Abjuração",
+    "type": "proteger, bloquear, defender"
+  },
+  {
+    "name": "Adivinhação",
+    "type": "revelar, prever"
+  },
+  {
+    "name": "Conjuração",
+    "type": "sequestrar, invocar"
+  },
+  {
+    "name": "Encantamento",
+    "type": "imbuir de efeito"
+  },
+  {
+    "name": "Evocação",
+    "type": "criação a partir da matéria"
+  },
+  {
+    "name": "Ilusão",
+    "type": "alterar percepção, enganar"
+  },
+  {
+    "name": "Necromancia",
+    "type": "manipular a não vida"
+  },
+  {
+    "name": "Evocação",
+    "type": "alterar e metamorfosear aspectos físicos"
+  }
+]

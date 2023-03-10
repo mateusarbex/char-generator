@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "Draconis";
+  src: local("Draconis"), url("./fonts/Draconis.ttf");
+}
+
+@font-face {
+  font-family: "DraconisBold";
+  src: local("DraconisBold"), url("./fonts/DraconisBold.ttf");
+}
+
+@font-face {
+  font-family: "DraconisBoldItalic";
+  src: local("DraconisBoldItalic"), url("./fonts/DraconisBoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "DraconisItalic";
+  src: local("DraconisItalic"), url("./fonts/DraconisItalic.ttf");
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: local("Garamond"), url("./fonts/Garamond.ttf");
+}
+
+@font-face {
+  font-family: "GaramondItalic";
+  src: local("GaramondItalic"), url("./fonts/GaramondItalic.ttf");
+}

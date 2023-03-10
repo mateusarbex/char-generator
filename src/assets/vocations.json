@@ -1,0 +1,66 @@
+[
+  {
+    "nameM": "Clérigo",
+    "nameF": "Clériga",
+    "name": "Clérigos",
+    "pre": { "atr": "PORTE", "value": 8 },
+    "char": {
+      "w_a": "todo tipo de armadura e arma que não sejam cortantes",
+      "mana": { "mod": "PORTE", "bonus": 0 },
+      "saving": 9,
+      "initial_talent": [
+        "Exorcizar: afastar mortos-vivos e criaturas demoníacas. 1 ponto de Mana. Os afetados fugirão o n° de rodadas do seu mod. de Porte. Mortos-vivos que possuam ¼ de sua Vitalidade ou menos são destruídos"
+      ]
+    }
+  },
+  {
+    "nameM": "Guerreiro",
+    "nameF": "Guerreira",
+    "name": "Guerreiros",
+    "pre": { "atr": null, "value": 0 },
+    "char": {
+      "w_a": "todo tipo de armadura e arma",
+      "mana": null,
+      "saving": 9,
+      "initial_talent": [
+        "Especialização em Arma: Por conta do treinamento, um Guerreiro possui excelente perícia com armas. Escolha um número de armas igual ao seu modificador de Espírito (mínimo de uma arma) e ao combater com uma delas some +1 em seu Ataque."
+      ]
+    }
+  },
+  {
+    "nameM": "Ladino",
+    "nameF": "Ladina",
+    "name": "Ladinos",
+    "pre": { "atr": "AGILIDADE", "value": 8 },
+    "char": {
+      "w_a": "Armadura de couro, mas não escudos, armas de combate à distância e armas de uma mão. ",
+      "mana": null,
+      "saving": 9,
+      "initial_talent": [
+        "Equipamentos: Armadura de couro (exceto escudos), armas de combate à distância e armas de uma mão.",
+        "Habilidades de Ladino: Um Ladino sabe uma série de habilidades úteis. Para cada uma das Habilidades, você possui um número de chances igual ao modificador de Atributo relacionado +1 (em caso de modificador de Atributo negativo, você possui 2).",
+        "Abrir Fechaduras (AGI)",
+        "Escalar (FOR)",
+        "Esquadrinhar (ESP)",
+        "Furtar (AGI)",
+        "Furtividade (AGI)",
+        "Sabotar (ESP)"
+      ]
+    }
+  },
+  {
+    "nameM": "Mago",
+    "nameF": "Maga",
+    "name": "Magos",
+    "pre": { "atr": "ESPIRITO", "value": 9 },
+    "char": {
+      "w_a": "Nenhuma armadura ou escudo, Adagas, Cajados e Funda",
+      "mana": { "mod": "ESPIRITO", "bonus": 1 },
+
+      "saving": 9,
+      "initial_talent": [
+        "Lançar Magia: Um Mago lança Encantos. Você possui acesso aos conhecimentos de três Tradições Mágicas de início. A cada tentativa de uso de Magia, você gasta 1 ponto de Mana. Além dessas Tradições, um Mago só pode aprender um número de Tradições Mágicas iguais ao seu modificador de Espírito"
+      ]
+    }
+  }
+]
