@@ -8,6 +8,7 @@ import {
   handleVocation,
 } from "./utils";
 import { Attributes, Vocation, Info, Origin, Description } from "./components";
+import { Saving } from "./components/Saving";
 
 function App() {
   const [character, setCharacter] = useState(null);
@@ -36,10 +37,9 @@ function App() {
             <Description
               origin={character.origin}
               vocation={character.vocation}
-            ></Description>
+            />
             <div className="stats-container">
               <Origin origin={character.origin} />
-
               <div>
                 <div className="section-title">Atributos</div>
                 <div className="attributes-container">
@@ -48,10 +48,20 @@ function App() {
                     vocation={character.vocation}
                     attributes={character.attributes}
                     origin={character.origin}
-                  ></Info>
+                  />
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <div className="section-title">Salvaguarda</div>
+                  <Saving vocation={character.vocation} />
                 </div>
               </div>
-              <Vocation vocation={character.vocation}></Vocation>
+              <Vocation vocation={character.vocation} />
             </div>
           </div>
         )}

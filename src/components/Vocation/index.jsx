@@ -8,7 +8,13 @@ export const Vocation = ({ vocation }) => {
       {vocation.char.initial_talent.slice(0, 2).map((d) => (
         <div key={d}>
           <span style={{ fontWeight: "bold" }}>{d.split(":")[0]}</span>
-          <span>{d.split(":")[1] && ":" + d.split(":")[1]}</span>
+          <span>
+            {d.split(":")[1] &&
+              ":" +
+                d
+                  .split(":")[1]
+                  .replace("Tradições", ["Teste", <span>Teste</span>])}
+          </span>
         </div>
       ))}
       {vocation.name === "Magos" && (

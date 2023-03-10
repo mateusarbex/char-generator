@@ -44,10 +44,6 @@ export const Info = ({ vocation, attributes, origin }) => {
         {attributes.FORCA + handleVit()}
       </div>
       <div>
-        <span style={{ fontWeight: "bold" }}>Salvaguarda</span>:{" "}
-        {vocation.char.saving}
-      </div>
-      <div>
         <span style={{ fontWeight: "bold" }}>Pontos de Mana</span>:{" "}
         {handleMana()}
       </div>
