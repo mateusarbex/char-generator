@@ -1,17 +1,23 @@
 import "./App.css";
 import logo from "./assets/images/logo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   handleAttributeDiceRoll,
   attributes,
   handleOrigin,
   handleVocation,
+  handleEquipament,
 } from "./utils";
-import { Attributes, Vocation, Info, Origin, Description } from "./components";
-import { Saving } from "./components/Saving";
+import { Description } from "./components";
+
+import { StatContainer } from "./components/StatContainer";
 
 function App() {
   const [character, setCharacter] = useState(null);
+
+  useEffect(() => {
+    handleCreateNewCharacter();
+  }, []);
 
   const handleCreateNewCharacter = () => {
     window.scrollTo(0, 0);
@@ -20,7 +26,9 @@ function App() {
     );
     const origin = handleOrigin();
     const vocation = handleVocation(attributeMap);
-    setCharacter({ attributes: attributeMap, origin, vocation });
+    const equipment = handleEquipament();
+    console.log(equipment);
+    setCharacter({ attributes: attributeMap, origin, vocation, equipment });
   };
 
   return (
@@ -38,38 +46,14 @@ function App() {
               origin={character.origin}
               vocation={character.vocation}
             />
-            <div className="stats-container">
-              <Origin origin={character.origin} />
-              <div>
-                <div className="section-title">Atributos</div>
-                <div className="attributes-container">
-                  <Attributes attributes={character.attributes} />
-                  <Info
-                    vocation={character.vocation}
-                    attributes={character.attributes}
-                    origin={character.origin}
-                  />
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                  }}
-                >
-                  <div className="section-title">Salvaguarda</div>
-                  <Saving vocation={character.vocation} />
-                </div>
-              </div>
-              <Vocation vocation={character.vocation} />
-            </div>
+            <StatContainer character={character} />
           </div>
         )}
         <div
           className={"generator-link" + ((character && " new-char") || "")}
           onClick={() => handleCreateNewCharacter()}
         >
-          {(character && "Gerar outro personagem?") || "Criar novo personagem"}
+          Gerar outro personagem?
         </div>
       </div>
     </div>

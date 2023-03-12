@@ -38,20 +38,18 @@ export const Info = ({ vocation, attributes, origin }) => {
     return (formula < 6 && 6) || formula;
   }, [attributes]);
   return (
-    <div>
+    <div className="section-container">
       <div>
-        <span style={{ fontWeight: "bold" }}>Vitalidade</span>:{" "}
-        {attributes.FORCA + handleVit()}
+        <span>Vitalidade</span>: {attributes.FORCA + handleVit()}
       </div>
       <div>
-        <span style={{ fontWeight: "bold" }}>Pontos de Mana</span>:{" "}
-        {handleMana()}
+        <span>Pontos de Mana</span>: {handleMana()}
       </div>
       <div>
-        <span style={{ fontWeight: "bold" }}>Ataque</span>: {handleAtaque()}
+        <span>Ataque</span>: {handleAtaque()}
       </div>
       <div>
-        <span style={{ fontWeight: "bold" }}>Defesa</span>: {handleDefesa()}
+        <span>Defesa</span>: {handleDefesa()}
       </div>
     </div>
   );

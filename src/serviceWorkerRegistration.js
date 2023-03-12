@@ -37,7 +37,7 @@ export function register(config) {
         "updateready",
         function (e) {
           if (
-            window.applicationCache.status ==
+            window.applicationCache.status ===
             window.applicationCache.UPDATEREADY
           ) {
             // Browser downloaded a new app cache.

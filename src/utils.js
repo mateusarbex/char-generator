@@ -1,5 +1,6 @@
 import origins from "./assets/origin.json";
 import vocations from "./assets/vocations.json";
+import equipment from "./assets/equipment.json";
 
 const diceRoll = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
@@ -16,6 +17,10 @@ export const handleVocation = (attributes) => {
   );
   return possibleVocations[diceRoll(0, possibleVocations.length)];
 };
+
+export const handleEquipament = () => [
+  ...equipment[diceRoll(0, equipment.length)],
+];
 
 export const attributes = {
   FORCA: "Força",

@@ -1,0 +1,5 @@
+.description-title {
+  font-weight: bold;
+  font-size: 2rem;
+  animation: 0.25s ease-out 0s 1 showStats;
+}

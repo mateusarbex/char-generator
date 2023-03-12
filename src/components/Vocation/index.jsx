@@ -1,3 +1,4 @@
+import reactStringReplace from "react-string-replace";
 import magic from "../../assets/magic.json";
 
 export const Vocation = ({ vocation }) => {
@@ -5,18 +6,25 @@ export const Vocation = ({ vocation }) => {
   return (
     <div>
       <div className="section-title">{vocation.name}</div>
-      {vocation.char.initial_talent.slice(0, 2).map((d) => (
-        <div key={d}>
-          <span style={{ fontWeight: "bold" }}>{d.split(":")[0]}</span>
-          <span>
-            {d.split(":")[1] &&
-              ":" +
-                d
-                  .split(":")[1]
-                  .replace("Tradições", ["Teste", <span>Teste</span>])}
-          </span>
-        </div>
-      ))}
+      <div className="section-container">
+        {vocation.char.initial_talent.slice(0, 2).map((d) => (
+          <div key={d}>
+            <span>{d.split(":")[0]}</span>:
+            <span>
+              {d.split(":")[1] &&
+                reactStringReplace(
+                  d.split(":")[1],
+                  /(Tradições Mágicas|Tradições|Habilidades|Espírito|Força|Agilidade|Porte)/,
+                  (match, index) => (
+                    <span key={(match, index)} style={{ fontWeight: "bold" }}>
+                      {match}
+                    </span>
+                  )
+                )}
+            </span>
+          </div>
+        ))}
+      </div>
       {vocation.name === "Magos" && (
         <div>
           <div className="section-title">Tradições</div>
