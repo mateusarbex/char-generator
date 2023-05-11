@@ -1,4 +1,5 @@
-.stats-container {
+.stats-container,
+.item-equipament-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,7 +19,8 @@
 }
 
 @media (max-width: 750px) {
-  .stats-container {
+  .stats-container,
+  .item-equipament-container {
     flex-direction: column;
   }
 }

@@ -12,6 +12,7 @@ export const StatContainer = ({ character }) => {
             vocation={character.vocation}
             attributes={character.attributes}
             origin={character.origin}
+            arms={character.arms}
           />
         </div>
         <div
@@ -23,11 +24,26 @@ export const StatContainer = ({ character }) => {
         >
           <div className="section-title">Salvaguarda</div>
           <Saving vocation={character.vocation} />
-          <div className="section-title">Equipamento</div>
-          <div>
-            {character.equipment.map((e) => (
-              <li key={e}>{e}</li>
-            ))}
+          <div className="item-equipament-container">
+            <article style={{ marginRight: "2rem" }}>
+              <div className="section-title">Itens</div>
+              <div>
+                {character.equipment.map((e) => (
+                  <li key={e}>{e}</li>
+                ))}
+              </div>
+            </article>
+            <article>
+              <div className="section-title">Equipamento</div>
+              <div>
+                <li>{character.arms.weapon}</li>
+                {character.arms.armor && (
+                  <li key={character.arms.armor.name}>
+                    {character.arms.armor?.name}
+                  </li>
+                )}
+              </div>
+            </article>
           </div>
         </div>
       </div>

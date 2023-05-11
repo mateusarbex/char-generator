@@ -1,0 +1,19 @@
+{
+  "weapons": [
+    "Maça",
+    "Martelo",
+    "Funda",
+    "Machado",
+    "Espada",
+    "Espada Curta",
+    "Martelo",
+    "Arco Curto",
+    "Arco Longo",
+    "Machadinha"
+  ],
+  "armor": [
+    { "name": "Armadura de couro", "value": 4 },
+    { "name": "Armadura de placas", "value": 8 },
+    { "name": "Cota de malha", "value": 6 }
+  ]
+}

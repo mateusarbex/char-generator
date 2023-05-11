@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { handleGetMod } from "../../utils";
 
-export const Info = ({ vocation, attributes, origin }) => {
+export const Info = ({ vocation, attributes, origin, arms }) => {
   const handleMana = useCallback(() => {
     if (vocation.char.mana) {
       return (
@@ -15,7 +15,7 @@ export const Info = ({ vocation, attributes, origin }) => {
 
   const handleAtaque = useCallback(() => {
     return Math.floor(
-      handleGetMod(attributes.AGILIDADE) + handleGetMod(attributes.FORCA)
+      (handleGetMod(attributes.AGILIDADE) + handleGetMod(attributes.FORCA)) / 2
     );
   }, [attributes]);
 
@@ -50,6 +50,9 @@ export const Info = ({ vocation, attributes, origin }) => {
       </div>
       <div>
         <span>Defesa</span>: {handleDefesa()}
+      </div>
+      <div>
+        <span>Armadura</span>: {arms.armor?.value || 0}
       </div>
     </div>
   );

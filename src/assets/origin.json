@@ -28,7 +28,7 @@
     "name": "Elfos",
     "mod": { "case": null, "value": 2 },
     "description": [
-      "Insone: Elfos são imunes a sono. Meditam por 4 horas para descansar.",
+      "Insone: Elfos não são afetados pela paralisia decorrente do medo de mortos vivos que possuam até 2DVs",
       "Visão no escuro: Conseguem enxergar em ambientes com pouca ou nenhuma luminosidade",
       "Evolução Lenta: eles recebem só 4 pontos de evolução ao progredirem",
       "Sangue Mágico: Possuem 1 Pontos de Mana de 1 Tradição de Mágica.",

@@ -7,6 +7,7 @@ import {
   handleOrigin,
   handleVocation,
   handleEquipament,
+  handleArms,
 } from "./utils";
 import { Description } from "./components";
 
@@ -27,8 +28,14 @@ function App() {
     const origin = handleOrigin();
     const vocation = handleVocation(attributeMap);
     const equipment = handleEquipament();
-    console.log(equipment);
-    setCharacter({ attributes: attributeMap, origin, vocation, equipment });
+    const arms = handleArms(vocation);
+    setCharacter({
+      attributes: attributeMap,
+      origin,
+      vocation,
+      equipment,
+      arms,
+    });
   };
 
   return (
