@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/char-generator/static/css/main.d7a951c7.css",
-    "main.js": "/char-generator/static/js/main.97781833.js",
+    "main.css": "/char-generator/static/css/main.6c392b10.css",
+    "main.js": "/char-generator/static/js/main.23103259.js",
     "static/js/787.112d217b.chunk.js": "/char-generator/static/js/787.112d217b.chunk.js",
     "static/media/Garamond.ttf": "/char-generator/static/media/Garamond.baa0e0cf79395becf7d7.ttf",
     "static/media/GaramondItalic.ttf": "/char-generator/static/media/GaramondItalic.2d561b81d4fd1bf7188a.ttf",
@@ -12,12 +12,12 @@
     "static/media/DraconisBold.ttf": "/char-generator/static/media/DraconisBold.f4d8b9c53b024fa0b29c.ttf",
     "static/media/Draconis.ttf": "/char-generator/static/media/Draconis.a680907cf7417672cfa0.ttf",
     "index.html": "/char-generator/index.html",
-    "main.d7a951c7.css.map": "/char-generator/static/css/main.d7a951c7.css.map",
-    "main.97781833.js.map": "/char-generator/static/js/main.97781833.js.map",
+    "main.6c392b10.css.map": "/char-generator/static/css/main.6c392b10.css.map",
+    "main.23103259.js.map": "/char-generator/static/js/main.23103259.js.map",
     "787.112d217b.chunk.js.map": "/char-generator/static/js/787.112d217b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7a951c7.css",
-    "static/js/main.97781833.js"
+    "static/css/main.6c392b10.css",
+    "static/js/main.23103259.js"
   ]
 }
