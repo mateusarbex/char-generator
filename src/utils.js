@@ -64,6 +64,8 @@ export const handleArms = (vocation) => {
         "Armadura de couro"
       );
       break;
+    default:
+      break;
   }
   const possibleWeapons = arms.weapons.filter((v) => filters.includes(v));
   const weapon = possibleWeapons[diceRoll(0, possibleWeapons.length)];
